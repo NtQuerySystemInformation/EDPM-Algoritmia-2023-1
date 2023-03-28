@@ -5,9 +5,9 @@
 porque no quiero guardarlo en google drive y de repente a alguien le sirve mis soluciones :P
  
 Algoritmia:
-1.-Lab 1: Resueltos de 2020-2 hasta 2022-2
-2.-Lab 2: Pendiente 
+Lab 1: Resueltos de 2020-2 hasta 2022-2
+Lab 2: Pendiente 
 
 EDPM:
-1.-Practica 1: Pendiente.
+Practica 1: Pendiente.
  
