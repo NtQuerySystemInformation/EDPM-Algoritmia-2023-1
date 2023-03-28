@@ -6,7 +6,7 @@ porque no quiero guardarlo en google drive y de repente a alguien le sirve mis s
  
 Algoritmia:
 ================================
-Lab 1: Resueltos de 2020-2 hasta 2022-2
+Lab 1: Resueltos de 2020-2 hasta 2022-2\
 Lab 2: Pendiente 
 
 
