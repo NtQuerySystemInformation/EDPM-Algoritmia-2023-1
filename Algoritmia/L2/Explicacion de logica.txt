@@ -1,3 +1,6 @@
-Estrategia principal para recursion: "Los universos".
+							Tema: Recursion.
 ============================================================================================
-Para explicar este aspecto, 
+Resolucion general: "Los universos".
+============================================================================================
+Considero que para explicar que cosa es un universo en recursion, es necesario visualizar el problema ante todo.
+
