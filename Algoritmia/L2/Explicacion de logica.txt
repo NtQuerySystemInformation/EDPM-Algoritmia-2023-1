@@ -1,0 +1,3 @@
+Estrategia principal para recursion: "Los universos".
+============================================================================================
+Para explicar este aspecto, 
