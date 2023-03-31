@@ -1,11 +1,14 @@
-Fuerza Bruta: 
+							Tema: Fuerza Bruta.
 =================================================================================================================
-Resolucion general: Contar bits especificos del cromosoma/usar el cromosoma que cumple con los criterios especificos.
-
-Estrategias especificas: 
+Resolucion general: 
+=================================================================================================================
+	1.-Contar bits especificos del cromosoma/usar el cromosoma que cumple con los criterios especificos.
+=================================================================================================================
+Estrategias de planteamiento:
+=================================================================================================================
 	1.-Uso de cromosomas adicionales para satisfacer un criterio tacito/explicito:
-		-Debido a la variedad de criterios que pueden ser usados, nos encargaremos de 
-		plantear los mas comunes a nivel programatico.
-
-(Ejemplos y planteamiento queda pendiente entre 1-2 de abril.)
+		1.1.-Debido a la variedad de criterios que pueden ser usados, nos encargaremos de 
+		plantear los mas practicos, para los casos mas dificiles (problemas de tablero o tiempo).
+	
+	Ejemplos y planteamiento queda pendiente entre 1-2 de abril.)
 
