@@ -3,5 +3,4 @@ Rehacer los siguientes tipos de problemas (2020 - 2022):
 1.-Problemas relacionado a tablas.
 2.-Problemas relacionado a criterios de tiempo.
 
-Para ambos casos, lo mas importante es el uso de cromosomas adicionales como practica.
-(Esto lo actualizare el fin de semana) 
+(Actualizare la lista aqui)

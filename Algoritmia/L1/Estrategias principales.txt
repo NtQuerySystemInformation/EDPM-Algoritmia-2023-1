@@ -8,7 +8,7 @@ Estrategias de planteamiento:
 =================================================================================================================
 	1.-Uso de cromosomas adicionales para satisfacer un criterio tacito/explicito:
 		1.1.-Debido a la variedad de criterios que pueden ser usados, nos encargaremos de 
-		plantear los mas practicos, para los casos mas dificiles (problemas de tablero o tiempo).
+		plantear los mas practicos, para los casos mas dificiles (problemas de tablero).
 	
 	Ejemplos y planteamiento queda pendiente entre 1-2 de abril.)
 
