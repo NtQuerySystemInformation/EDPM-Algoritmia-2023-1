@@ -9,8 +9,5 @@ Estrategias de planteamiento:
 	1.-Uso de cromosomas adicionales para satisfacer un criterio tacito/explicito:
 		1.1.-Debido a la variedad de criterios que pueden ser usados, nos encargaremos de 
 		plantear los mas practicos, para los casos mas dificiles (problemas de tablero).
-	
 
-Pendiente en este sentido:
-	1.-Optimizacion de soluciones, de acuerdo a ejemplos de clase.
-	2.-Plantear estrategias de resolucion de problemas graficamente.
+(Acabar este fin de semana)

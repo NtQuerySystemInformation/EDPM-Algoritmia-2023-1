@@ -3,4 +3,8 @@ Rehacer los siguientes tipos de problemas (2020 - 2022):
 1.-Problemas relacionado a tablas.
 2.-Problemas relacionado a criterios de tiempo.
 
-(Actualizare la lista aqui)
+=================================================================================
+Pendiente en este sentido:
+	1.-Variar soluciones de acuerdo a los ejemplos mostrados en clase.
+	2.-Plantear estrategias para problemas de arriba.
+=================================================================================
