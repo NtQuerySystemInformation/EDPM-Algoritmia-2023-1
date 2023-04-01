@@ -1,10 +1,16 @@
-Rehacer los siguientes tipos de problemas (2020 - 2022):
+Actualizacion de soluciones:
 =================================================================================
-1.-Problemas relacionado a tablas.
-2.-Problemas relacionado a criterios de tiempo.
-
+-Problemas relacionado a tablas.
+-Problemas relacionado a criterios de tiempo.
 =================================================================================
-Pendiente en este sentido:
-	1.-Variar soluciones de acuerdo a los ejemplos mostrados en clase.
-	2.-Plantear estrategias para problemas de arriba.
+Especificamente:
+	1.-2021-2 Pregunta 1
+	2.-2019-2 Pregunta 2.
+	3.-2022-1 Pregunta 2
+	4.-2022-2 Pregunta 2.
+	5.-2021-1 Pregunta 1/2.
+	
 =================================================================================
+En clase ya se han resuelto varias de estas preguntas. Yo voy a plantearlos de diferente manera
+en este drive por criterios de velocidad.
+=============================================================================================
