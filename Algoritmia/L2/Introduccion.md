@@ -2,12 +2,12 @@
 
 ## Introduccion
 
-Esto lo hago debido a que las explicaciones de los profesores en relacion a la manipulacion de la pila omiten detalles particularmente interesantes en relacion a la ABI,  lo cual convierte el<br /> planteamiento de resolucion de problemas recursivos extremedamente confuso y poco intuitivo desde mi perspectiva como alguien acostumbrado a hacer ingenieria reversa como pasatiempo.
+Esto lo hago debido a que las explicaciones de los profesores en relacion a la manipulacion de la pila omiten detalles particularmente interesantes en relacion a la ABI,  lo cual convierte el planteamiento de resolucion de problemas recursivos extremedamente confuso y poco intuitivo desde mi perspectiva como alguien acostumbrado a hacer ingenieria reversa como pasatiempo.
 
 Primero comencemos explicando los principales componentes de una funcion recursiva, y luego veamos un ejemplo clasico durante las clases de Algoritmia en el cual estos conceptos se pueden aplicar. <br >
 
-Cabe recalcar que este binario fue generado usando el compilador GCC (el que usamos en Netbeans y DevC++ generalmente).<br /> 
-Asimismo, optimize los simbolos de los nombres de las funciones (debido al name mangling).
+Cabe recalcar que este binario fue generado usando el compilador GCC (el que usamos en Netbeans y DevC++ generalmente, el cual es el mas comun en el curso).<br /> 
+Asimismo, optimize los simbolos de los nombres de las funciones en el codigo de abajo (debido al name mangling).
 
 `IMPORTANTE: Es recomendable haber tenido una experiencia previa con x86/x64 y sobre como las funciones trabajan en ensamblador (stack frames),
 de lo contrario, la explicacion a continuacion podria ser incluso mas complicada de lo normal.<br />
@@ -28,7 +28,7 @@ Esto nos plantea generar el siguiente grafico, usando una unica funcion recursiv
 
 ## Analizando main y el progreso de la funcion recursiva estaticamente y dinamicamente
 
-Si bien podria sonar como una buena idea el describir como encontre esta funcion en el ejecutable (lo cual no es importante desde la perspectiva de un programador),<br />
+Si bien podria sonar como una buena idea el describir como encontre esta funcion en el ejecutable (lo cual no es importante desde la perspectiva de un programador),
 considero que es mejor concentrarnos en QUE cosa esta haciendo cada una de las funciones por si mismas.
 
 Antes de que me preguntes que cosas estan pasando aqui, solo tienes que saber lo siguiente (Puedes investigar el resto por tu cuenta y ver videos al respecto):<br />
@@ -50,7 +50,7 @@ Funcion Main:
 (...)
 mov     dword ptr [esp+4], 5 ; segundo argumento.
 mov     dword ptr [esp], 3 ; primer argumento
-call    triangulo	; equivalente a triangulo(3,5)
+call    triangulo	; equivalente en C a triangulo(3,5)
 (...)
 ```
 
@@ -62,20 +62,27 @@ sub     esp, 18h
 mov     eax, [ebp+a]
 cmp     eax, [ebp+b]
 jg      short FinalizandoRecursion
+
 mov     eax, [ebp+a]
-mov     [esp], eax      ; a
-call    imprimirEstrellas
+mov     [esp], eax      
+call    imprimirEstrellas ; Equivalente en C a imprimirEstrellas(a);
 mov     eax, [ebp+a]
 lea     edx, [eax+1]
 mov     eax, [ebp+b]
-mov     [esp+4], eax    ; b
-mov     [esp], edx      ; a
-call    triangulo ; 
+mov     [esp+4], eax    
+mov     [esp], edx     
+call    triangulo ; Equivalente en C a triangulo(a + 1, b)
 mov     eax, [ebp+a]
-mov     [esp], eax      ; a
-call    imprimirEstrellas
+mov     [esp], eax      
+call    imprimirEstrellas ; Equivalente en C a imprimirEstrellas(a);
+
 FinalizandoRecursion:
 nop
 leave
 retn
+```
+Todo esto parece un desmadre que parece complicar mas la vida que aliviarla, 
+asi que mejor empecemos entendiendo lo mas importante de todas las instrucciones en lenguaje ensamblador.
+``` 
+	call y ret
 ```
