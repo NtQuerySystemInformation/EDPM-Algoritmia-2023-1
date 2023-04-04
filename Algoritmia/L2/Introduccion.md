@@ -40,13 +40,13 @@ Problema: Usando una unica funcion recursiva, triangulo(3, 5), genere el siguien
 Por otro lado, una de las soluciones del profesor se plantea de la siguiente manera:
 
 ```
-							void triangulo(int a, int b){    
-								if (a <= b){
-									imprimirEstrellas(a);
-									triangulo(a + 1, b);
-									imprimirEstrellas(a);
-								}
+						void triangulo(int a, int b){    
+							if (a <= b){
+								imprimirEstrellas(a);
+								triangulo(a + 1, b);
+								imprimirEstrellas(a);
 							}
+						}
 
 ```
 
