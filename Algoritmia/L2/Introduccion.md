@@ -2,15 +2,15 @@
 
 ## Introduccion
 
-Esto lo hago debido a que las explicaciones de los profesores en relacion a la manipulacion de la pila omiten detalles particularmente interesantes en relacion a la ABI,  lo cual convierte el planteamiento de resolucion de problemas recursivos extremedamente confuso y poco intuitivo desde mi perspectiva como alguien acostumbrado a hacer ingenieria reversa como pasatiempo.
+Esto lo hago debido a que las explicaciones de los profesores en relacion a la manipulacion de la pila omiten detalles particularmente interesantes en relacion a la ABI,  lo cual convierte el<br /> planteamiento de resolucion de problemas recursivos extremedamente confuso y poco intuitivo desde mi perspectiva como alguien acostumbrado a hacer ingenieria reversa como pasatiempo.
 
-Primero comencemos explicando los principales componentes de una funcion recursiva, y luego veamos un ejemplo clasico durante las clases de Algoritmia en el cual estos conceptos se pueden aplicar.
+Primero comencemos explicando los principales componentes de una funcion recursiva, y luego veamos un ejemplo clasico durante las clases de Algoritmia en el cual estos conceptos se pueden aplicar. <br >
 
-Cabe recalcar que este binario fue generado usando el compilador GCC (el que usamos en Netbeans y DevC++ generalmente). 
+Cabe recalcar que este binario fue generado usando el compilador GCC (el que usamos en Netbeans y DevC++ generalmente).<br /> 
 Asimismo, optimize los simbolos de los nombres de las funciones (debido al name mangling).
 
 `IMPORTANTE: Es recomendable haber tenido una experiencia previa con x86/x64 y sobre como las funciones trabajan en ensamblador (stack frames),
-de lo contrario, la explicacion a continuacion podria ser incluso mas complicada de lo normal.
+de lo contrario, la explicacion a continuacion podria ser incluso mas complicada de lo normal.<br />
 En cualquier manera, tratare de hacerlo lo mas intuitivo posible, brindando los conceptos necesarios para entender mi perspectiva.`
 
 
@@ -23,15 +23,15 @@ En cualquier manera, tratare de hacerlo lo mas intuitivo posible, brindando los 
 
 # Planteando el problema.
 
-Empecemos describiendo un problema simple: Laboratorio 2015-2 Pregunta 1.
+Empecemos describiendo un problema simple: Laboratorio 2015-2 Pregunta 1. <br />
 Esto nos plantea generar el siguiente grafico, usando una unica funcion recursiva triangulo, con argumentos 3 y 5.
 
 ## Analizando main y el progreso de la funcion recursiva estaticamente y dinamicamente
 
-Si bien podria sonar como una buena idea el describir como encontre esta funcion en el ejecutable (lo cual no es importante desde la perspectiva de un programador), 
+Si bien podria sonar como una buena idea el describir como encontre esta funcion en el ejecutable (lo cual no es importante desde la perspectiva de un programador),<br />
 considero que es mejor concentrarnos en QUE cosa esta haciendo cada una de las funciones por si mismas.
 
-Antes de que me preguntes que cosas estan pasando aqui, solo tienes que saber lo siguiente (Puedes investigar el resto por tu cuenta y ver videos al respecto):
+Antes de que me preguntes que cosas estan pasando aqui, solo tienes que saber lo siguiente (Puedes investigar el resto por tu cuenta y ver videos al respecto):<br />
 (Todo esto probablemente es mas entendible si ya has llevado OAC, yo no lo he llevado porque me he atrasado haciendo otras cosas y me he rehuso a llevar ED, lol.)
 
 ```
