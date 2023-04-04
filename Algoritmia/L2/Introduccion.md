@@ -29,12 +29,12 @@ Esto nos plantea lo siguiente:
 ```
 Problema: Usando una unica funcion recursiva, triangulo(3, 5), genere el siguiente grafico, teniendo en cuenta que a <= b en todo momento:
 
-											* * *
-											* * * *
-											* * * * *
-											* * * * *
-											* * * * 
-											* * *
+									* * *
+									* * * *
+									* * * * *
+									* * * * *
+									* * * * 
+									* * *
 
 ```
 Por otro lado, una de las soluciones del profesor se plantea de la siguiente manera:
