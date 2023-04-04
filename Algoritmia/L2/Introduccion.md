@@ -65,11 +65,11 @@ llamada 5: a = 6, b = 5
 ```
 
 Claramente cuando la variable a llega hasta 6, la condicional "if (a <= b)" no se cumple, lo cual implicaria el fin de la recursion (caso base).
-Este claramente es el fin de la recursion, pero que ocurre en el fin de la recursion como tal?.
+Pero que ocurre en el fin de la recursion como tal?.
 
 Para esto es necesario explicar en bajo nivel como funcionan las cosas, especificamente QUE ocurre una vez llegado al caso base.
 
-Para esto, debemos destacar los siguientes conceptos (Puedes investigar el resto por tu cuenta y ver videos al respecto):<br />
+Debido a este motivo, es necesario destacar los siguientes conceptos (Puedes investigar el resto por tu cuenta y ver videos al respecto):<br />
 (Todo esto probablemente es mas entendible si ya has llevado OAC, yo no lo he llevado porque me he atrasado haciendo otras cosas y me he rehuso a llevar ED, lol.)
 
 ```
@@ -121,5 +121,6 @@ nop
 leave
 retn
 ```
-
+De todas estas instrucciones, debemos concentrarnos en como la pila va cambiando a lo largo de cada llamda en bajo nivel,
+por esta razon, nos enfocaremos en la instruccion "call". 
 
