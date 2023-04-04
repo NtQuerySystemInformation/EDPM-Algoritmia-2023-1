@@ -4,7 +4,7 @@
 
 Esto lo hago debido a que las explicaciones de los profesores en relacion a la manipulacion de la pila omiten detalles particularmente interesantes en relacion a la ABI,  lo cual convierte el planteamiento de resolucion de problemas recursivos extremedamente confuso y poco intuitivo desde mi perspectiva como alguien acostumbrado a hacer ingenieria reversa como pasatiempo.
 
-Primero comencemos explicando los principales componentes de una funcion recursiva, y luego veamos un ejemplo clasico durante las clases de Algoritmia en el cual estos conceptos se pueden aplicar. <br >
+Primero comencemos explicando los principales componentes de una funcion recursiva, y luego veremos un ejemplo clasico durante las clases de Algoritmia en el cual estos conceptos se pueden aplicar. <br >
 
 Cabe recalcar que este binario fue generado usando el compilador GCC (el que usamos en Netbeans y DevC++ generalmente, el cual es el mas comun en el curso).<br /> 
 Asimismo, optimize los simbolos de los nombres de las funciones en el codigo de abajo (debido al name mangling).
@@ -52,12 +52,24 @@ Por otro lado, una de las soluciones del profesor se plantea de la siguiente man
 
 ¿Como exactamente funciona la pila en este sentido, para generar el grafico deseado?
 
-## Analizando la funcion recursiva en bajo nivel:
+## Analizando la solucion de la funcion recursiva en bajo nivel y a nivel de codigo fuente:
 
-Si bien podria sonar como una buena idea el describir como encontre esta funcion en el ejecutable (lo cual no es importante desde la perspectiva de un programador),
-considero que es mejor concentrarnos en QUE cosa esta haciendo cada una de las funciones por si mismas.
+Primero que todo es importante considerar que y como los argumentos de la funcion recursiva cambian (a cambia y b no).
+En este sentido, considerando el inicio de triangulo(3,5), tendremos en cuenta la llamada
+hacia imprimirEstrellas(a+1,b).
 
-Antes de que me preguntes que cosas estan pasando aqui, solo tienes que saber lo siguiente (Puedes investigar el resto por tu cuenta y ver videos al respecto):<br />
+```
+llamada 2: a = 4, b = 5
+llamada 3: a = 5, b = 5
+llamada 5: a = 6, b = 5 
+```
+
+Claramente cuando la variable a llega hasta 6, la condicional "if (a <= b)" no se cumple, lo cual implicaria el fin de la recursion (caso base).
+Este claramente es el fin de la recursion, pero que ocurre en el fin de la recursion como tal?.
+
+Para esto es necesario explicar en bajo nivel como funcionan las cosas, especificamente QUE ocurre una vez llegado al caso base.
+
+Para esto, debemos destacar los siguientes conceptos (Puedes investigar el resto por tu cuenta y ver videos al respecto):<br />
 (Todo esto probablemente es mas entendible si ya has llevado OAC, yo no lo he llevado porque me he atrasado haciendo otras cosas y me he rehuso a llevar ED, lol.)
 
 ```
@@ -110,7 +122,4 @@ leave
 retn
 ```
 
-Todo esto parece un desmadre que parece complicar mas la vida que aliviarla, 
-asi que mejor empecemos entendiendo los conceptos mas importantes de ensamblador que se pueden observar:
-```Function Prologue/Epilogue```, ```call``` y ```ret```
 
