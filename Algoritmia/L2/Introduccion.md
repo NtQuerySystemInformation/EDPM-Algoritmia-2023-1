@@ -10,7 +10,7 @@ Cabe recalcar que este binario fue generado usando el compilador GCC (el que usa
 Asimismo, optimize los simbolos de los nombres de las funciones en el codigo de abajo (debido al name mangling).
 
 `IMPORTANTE: Es recomendable haber tenido una experiencia previa con x86/x64 y sobre como las funciones trabajan en ensamblador (stack frames),
-de lo contrario, la explicacion a continuacion podria ser incluso mas complicada de lo normal.<br />
+de lo contrario, la explicacion a continuacion podria ser incluso mas complicada de lo normal.
 En cualquier manera, tratare de hacerlo lo mas intuitivo posible, brindando los conceptos necesarios para entender mi perspectiva.`
 
 
