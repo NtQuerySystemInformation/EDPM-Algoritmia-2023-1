@@ -28,8 +28,21 @@ Esto nos plantea generar el siguiente grafico, usando una unica funcion recursiv
 
 ## Analizando main y el progreso de la funcion recursiva estaticamente y dinamicamente
 
-Si bien podria sonar como una buena idea el describir como encontre esta funcion en el ejecutable (lo cual no es importante desde la perspectiva de un programador)
-Es mejor concentrarnos en QUE cosa esta haciendo cada una de las funciones por si mismas.
+Si bien podria sonar como una buena idea el describir como encontre esta funcion en el ejecutable (lo cual no es importante desde la perspectiva de un programador), 
+considero que es mejor concentrarnos en QUE cosa esta haciendo cada una de las funciones por si mismas.
+
+Antes de que me preguntes que cosas estan pasando aqui, solo tienes que saber lo siguiente (Puedes investigar el resto por tu cuenta y ver videos al respecto):
+(Todo esto probablemente es mas entendible si ya has llevado OAC, yo no lo he llevado porque me he atrasado haciendo otras cosas y me he rehuso a llevar ED, lol.)
+
+```
+	0.-La pila (o stack) es una estructura de datos FIFO (first in, first out). 
+	
+	1.-Para preparar el contexto de una funcion, es decir, cuando inicia y acaba una funcion, se emplea lo que se denomina funcion prologue y function epilogue.
+		->Para la funcion triangulo aqui particularmente el prologue va desde 'push ebp' hasta 'sub esp, 18h', mientras que su epilogue empieza con 'leave' y 'retn'.
+		->Este aspecto se entendera mas adelante para entender como los mecanismos recursivos funcionan.
+```
+
+Empecemos visualizando el codigo de lenguaje ensamblador.
 
 Funcion Main:
 
@@ -41,7 +54,7 @@ call    triangulo	; equivalente a triangulo(3,5)
 (...)
 ```
 
-Funcion Triangulo:
+Funcion triangulo:
 ```
 push    ebp
 mov     ebp, esp
