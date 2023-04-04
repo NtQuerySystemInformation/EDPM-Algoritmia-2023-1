@@ -1,8 +1,0 @@
-							Tema: Recursion.
-============================================================================================
-Resolucion general: "Los universos".
-============================================================================================
-Considero que para explicar que cosa es un universo en recursion, es necesario visualizar el problema ante todo,
-comprendiendo como se usa la pila.
-
-

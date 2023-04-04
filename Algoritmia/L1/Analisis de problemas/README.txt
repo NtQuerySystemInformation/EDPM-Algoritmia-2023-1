@@ -1,6 +1,5 @@
 IMPORTANTE:
 ====================================================
-Van a haber partes del planteamiento que se deben omitir o asumir tacitamente 
-por temas de velocidad (despues de todo, son 3 horas para las dos preguntas).
-
-Por esta razon, 
+Estrategias clasicas:
+1.-Arreglo opcional donde se usa el id como indice para setear bits (y ya saber que ha sido encontrado).
+2.-Matriz que representa cada hora en dia (problemas de tiempo)
