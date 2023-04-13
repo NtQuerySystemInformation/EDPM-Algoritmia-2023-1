@@ -12,5 +12,5 @@ Lab 2: Resuelto 2022-2
 
 EDPM:
 ===============================
-Practica 1: Pendiente.
+PC1: 2022-1 (Solo la parte de listas).
  
