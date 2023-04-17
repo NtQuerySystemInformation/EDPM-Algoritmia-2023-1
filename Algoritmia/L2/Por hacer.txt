@@ -1,0 +1,7 @@
+2022-2:
+	-P1: Resolver pregunta 1 usando planteamiento de problemas del 2015-2
+2022-1:
+	-Planteamiento solo deducible a traves de profesor: Las rutas posibles durante el recorrido del ancho son:
+		1.N a M
+		2.-M a N
+		3.-Si ya hiciste esos 2 recorridos y no llegas a A, entonces paras.
